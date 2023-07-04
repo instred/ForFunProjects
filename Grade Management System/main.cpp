@@ -28,6 +28,7 @@ int main(){
     t.addGrade(&s3, &c2, 4.5, 4, "karkuwkia");
     t.addGrade(&s, &c2, 2, 4, "karkuwkia");
     t.addGrade(&s2, &c2, 1, 4, "karkuwkia");
+    t.addGrade(&s2, &c2, 1, 1, "brak zadania");
     bool access = false;
     std::cout << "wprowadz haslo nauczyciela\n";
     std::string pwd = "";
