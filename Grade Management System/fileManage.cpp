@@ -1,6 +1,22 @@
 #include "fileManage.hpp"
 
-void fill_file(){
+
+bool FileManage::findLogin(std::string login, std::string pwd){
+    std::ifstream file("login.txt");
+    std::string l, p;
+    while(file >> l >> p){
+        if(l == login && p == pwd)
+            return true;
+    }
+    return false;
+}
+
+void FileManage::saveLogin(std::string login, std::string pwd){
+    std::ofstream file("login.txt", std::ios::app);
+    file << login << " " << pwd << '\n';
+}
+
+void FileManage::fillFile(){
     std::fstream file;
     int i = 1;
     file.open("available_ids.txt", std::ios::out);
@@ -16,7 +32,7 @@ void fill_file(){
     }
 }
 
-std::string remove_line(){
+std::string FileManage::removeLine(){
     std::fstream file_read;
     std::fstream file_write;
     char c;

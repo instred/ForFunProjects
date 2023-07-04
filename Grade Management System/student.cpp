@@ -3,7 +3,7 @@
 
 Student::Student(const std::string &f_name, const std::string &l_name) : first_name(f_name), last_name(l_name){
     //todo : error handling
-    this->id = std::stoi(remove_line());
+    this->id = std::stoi(FileManage::removeLine());
     this->available_ids.pop_back();
 }
 

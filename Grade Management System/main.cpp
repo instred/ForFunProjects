@@ -1,14 +1,14 @@
 #include "student.hpp"
 #include "course.hpp"
-#include "fileManage.hpp"
 #include "grade.hpp"
 #include "teacher.hpp"
+#include "login.hpp"
 #include <iostream>
 #include <iomanip>
 
 
 int main(){
-    fill_file();
+    FileManage::fillFile();
     Student s = Student("jakub", "zulczyk");
     Student s2 = Student("dawid", "bonk");
     Student s3 = Student("ada", "kowal");
@@ -20,7 +20,7 @@ int main(){
     c2.add_student(&s);
     c2.add_student(&s2);
     c2.add_student(&s3);
-    Teacher t = Teacher("jacek", "kaczmarek");
+    Teacher t = Teacher("login", "passwd");
     t.addCourse(&c);
     t.addCourse(&c2);
     t.addGrade(&s, &c, 4.5, 5, "sprawdzian przyrka");
@@ -29,15 +29,11 @@ int main(){
     t.addGrade(&s, &c2, 2, 4, "karkuwkia");
     t.addGrade(&s2, &c2, 1, 4, "karkuwkia");
     t.addGrade(&s2, &c2, 1, 1, "brak zadania");
-    bool access = false;
-    std::cout << "wprowadz haslo nauczyciela\n";
-    std::string pwd = "";
-    std::cin >> pwd;
-    if (pwd == "dupa123"){
-            access = true;
-        }
+    bool access = Login::loginAccess();
+    if (!(access))
+        return 0;
     while(access){
-        std::cout << "wybierz kurs\n";
+        std::cout << "Select your course\n";
         int i = 0;
         int choice;
         std::vector<Course*> courses = t.getCourses();
@@ -50,7 +46,6 @@ int main(){
         for (auto s : students){
             std::cout << s->ShowStudent() << "\n" << s->GetGrades(courses[choice]) << "\n";
         }
-
-
     }
+
 }

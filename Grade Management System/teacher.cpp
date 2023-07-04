@@ -1,15 +1,19 @@
 #include "teacher.hpp"
 
-Teacher::Teacher(std::string f_name, std::string l_name) : first_name(f_name), last_name(l_name){};
-
-void Teacher::addCourse(Course* newCourse){
-    this->courses.push_back(newCourse);
+Teacher::Teacher(std::string log, std::string pwd) : login(log), password(pwd){
+    FileManage::saveLogin(log, pwd);
 };
+
+
 
 void Teacher::addGrade(Student* student, Course* course, double g_value, int g_weight, std::string g_desc){
     Grade* newGrade = new Grade(student, course, g_value, g_weight, g_desc);
     this->grades.push_back(newGrade);
     student->addGrade(newGrade);
+};
+
+void Teacher::addCourse(Course* newCourse){
+    this->courses.push_back(newCourse);
 };
 
 std::vector<Course*> Teacher::getCourses(){

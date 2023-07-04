@@ -4,10 +4,17 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <typeinfo>
+
+class FileManage{
+
+    public:
+        static void fillFile();
+        static std::string removeLine();
+        static bool findLogin(std::string login, std::string pwd);
+        static void saveLogin(std::string login, std::string pwd);
+
+};
 
 
-void fill_file();
-std::string remove_line();
 
 #endif // FILEMANAGE_HPP
