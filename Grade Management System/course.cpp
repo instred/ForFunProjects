@@ -8,6 +8,6 @@ void Course::add_student(Student * student){
     this->students.push_back(student);
 }
 
-std::vector<Student*> Course::show_students(){
+std::vector<Student*> Course::GetStudents(){
     return this->students;
 }

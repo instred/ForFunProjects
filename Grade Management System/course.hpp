@@ -13,8 +13,8 @@ class Course{
     public:
         std::string course_name;
         Course(const std::string &name);
-        void add_student(Student * student);
-        std::vector<Student*> Course::show_students();
+        void add_student(Student* student);
+        std::vector<Student*> GetStudents();
 };
 
 #endif // COURSE_HPP

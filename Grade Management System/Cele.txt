@@ -1,0 +1,11 @@
+Cele:
+
+
+Logujesz sie jako nauczyciel
+Widzisz swoje kursy ktorych nauczasz
+Wchodzisz na wybrany kurs
+Wyswietla ci sie lista uczniow kazdy ze swoja ocena z przeedmiotu obok + opis oceny(idealnie jakby pokazywalo sie to po najechaniu na nia)
+Mozliwosci dodawania ocen
+Mozliwosc usuwania ocen
+Srednia ocen po prawej stronie 
+Dodanie wag ocen

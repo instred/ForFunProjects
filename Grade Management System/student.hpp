@@ -8,7 +8,6 @@
 #include "grade.hpp"
 
 
-
 class Student{
     private:
         std::vector<int> available_ids;
@@ -22,7 +21,9 @@ class Student{
         std::string last_name;
         Student(const std::string &f_name, const std::string &l_name);
         std::string ShowStudent();
-        std::string GetGrades();
+        std::string GetGrades(Course* c);
+        void addGrade(Grade* grade);
+
 };
 
 
