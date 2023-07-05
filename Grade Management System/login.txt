@@ -1,4 +1,4 @@
 adm2 qwerty
-jac_kacz kacz222
-lkj lkj
+jan jan
+asd asd
 login passwd

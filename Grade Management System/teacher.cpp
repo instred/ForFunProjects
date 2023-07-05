@@ -1,7 +1,9 @@
 #include "teacher.hpp"
 
 Teacher::Teacher(std::string log, std::string pwd) : login(log), password(pwd){
-    FileManage::saveLogin(log, pwd);
+    if(!(FileManage::findLogin(log, pwd))){
+        FileManage::saveLogin(log, pwd);
+    }
 };
 
 

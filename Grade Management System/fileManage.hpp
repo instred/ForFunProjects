@@ -4,6 +4,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <vector>
 
 class FileManage{
 
@@ -12,6 +13,7 @@ class FileManage{
         static std::string removeLine();
         static bool findLogin(std::string login, std::string pwd);
         static void saveLogin(std::string login, std::string pwd);
+        static std::vector<std::pair<std::string, std::string>> loadLogin();
 
 };
 

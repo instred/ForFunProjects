@@ -1,12 +1,21 @@
 #include "fileManage.hpp"
 
-
-bool FileManage::findLogin(std::string login, std::string pwd){
+std::vector<std::pair<std::string, std::string>> FileManage::loadLogin(){
     std::ifstream file("login.txt");
     std::string l, p;
+    std::vector<std::pair<std::string, std::string>> credentials;
     while(file >> l >> p){
-        if(l == login && p == pwd)
+        credentials.push_back(std::make_pair(l,p));
+    }
+    return credentials;
+}
+
+bool FileManage::findLogin(std::string login, std::string pwd){
+    std::vector<std::pair<std::string, std::string>> creds = FileManage::loadLogin();
+    for (int i = 0; i<creds.size(); i++){
+        if(creds[i].first == login && creds[i].second == pwd){
             return true;
+        }
     }
     return false;
 }
