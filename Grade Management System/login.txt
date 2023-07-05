@@ -1,4 +1,3 @@
 adm2 qwerty
 jan jan
-asd asd
-login passwd
+login pass

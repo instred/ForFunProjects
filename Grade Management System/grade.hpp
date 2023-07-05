@@ -2,7 +2,6 @@
 #define GRADE_HPP
 
 #include <string>
-#include <iomanip>
 
 class Course;
 class Student;
@@ -20,6 +19,7 @@ class Grade{
         Grade(Student* student, Course* course, double g_value, int g_weight, std::string desc);
         std::string GetGrades();
         Course* GetCourse();
+        Student* GetStudent();
 };
 
 

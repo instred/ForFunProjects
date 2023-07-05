@@ -1,25 +1,5 @@
 #include "fileManage.hpp"
 
-std::vector<std::pair<std::string, std::string>> FileManage::loadLogin(){
-    std::ifstream file("login.txt");
-    std::string l, p;
-    std::vector<std::pair<std::string, std::string>> credentials;
-    while(file >> l >> p){
-        credentials.push_back(std::make_pair(l,p));
-    }
-    return credentials;
-}
-
-bool FileManage::findLogin(std::string login, std::string pwd){
-    std::vector<std::pair<std::string, std::string>> creds = FileManage::loadLogin();
-    for (int i = 0; i<creds.size(); i++){
-        if(creds[i].first == login && creds[i].second == pwd){
-            return true;
-        }
-    }
-    return false;
-}
-
 void FileManage::saveLogin(std::string login, std::string pwd){
     std::ofstream file("login.txt", std::ios::app);
     file << login << " " << pwd << '\n';

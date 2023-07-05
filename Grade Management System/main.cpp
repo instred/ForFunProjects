@@ -8,5 +8,5 @@
 
 
 int main(){
-    Login::userLoop();
+    Login::initData();
 }

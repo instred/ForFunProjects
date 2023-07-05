@@ -11,9 +11,7 @@ class FileManage{
     public:
         static void fillFile();
         static std::string removeLine();
-        static bool findLogin(std::string login, std::string pwd);
         static void saveLogin(std::string login, std::string pwd);
-        static std::vector<std::pair<std::string, std::string>> loadLogin();
 
 };
 

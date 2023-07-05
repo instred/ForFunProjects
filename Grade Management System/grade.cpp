@@ -1,5 +1,7 @@
 #include "grade.hpp"
 
+#include <iomanip>
+
 
 Grade::Grade(Student* student, Course* course, double g_value, int g_weight, std::string desc) : student(student), course(course), 
 grade_value(g_value), grade_weight(g_weight), grade_description(desc){
@@ -14,4 +16,8 @@ std::string Grade::GetGrades(){
 
 Course* Grade::GetCourse(){
     return this->course;
+}
+
+Student* Grade::GetStudent(){
+    return this->student;
 }

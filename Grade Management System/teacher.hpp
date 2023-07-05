@@ -17,9 +17,10 @@ class Teacher{
     public:
         Teacher(std::string log, std::string pwd);
         void addCourse(Course* newCourse);
-        void addGrade(Student* student, Course* course, double g_value, int g_weight, std::string desc);
+        void addGrade(Grade* newGrade);
         std::vector<Course*> getCourses();
         std::vector<Grade*> getGrades();
+        std::pair<std::string, std::string> getData();
 };
 
 

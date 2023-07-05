@@ -10,7 +10,6 @@
 
 class Student{
     private:
-        std::vector<int> available_ids;
         int id;
     
     protected:
@@ -19,10 +18,11 @@ class Student{
     public:
         std::string first_name;
         std::string last_name;
-        Student(const std::string &f_name, const std::string &l_name);
+        Student(std::string f_name, std::string l_name);
         std::string ShowStudent();
         std::string GetGrades(Course* c);
         void addGrade(Grade* grade);
+        int getID();
 
 };
 

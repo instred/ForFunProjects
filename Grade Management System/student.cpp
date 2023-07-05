@@ -1,10 +1,9 @@
 #include "student.hpp"
 #include "fileManage.hpp"
 
-Student::Student(const std::string &f_name, const std::string &l_name) : first_name(f_name), last_name(l_name){
+Student::Student(std::string f_name, std::string l_name) : first_name(f_name), last_name(l_name){
     //todo : error handling
     this->id = std::stoi(FileManage::removeLine());
-    this->available_ids.pop_back();
 }
 
 std::string Student::ShowStudent(){
@@ -25,3 +24,6 @@ void Student::addGrade(Grade* grade){
     this->grades.push_back(grade);
 }
 
+int Student::getID(){
+    return this->id;
+}

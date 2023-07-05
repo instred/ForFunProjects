@@ -1,17 +1,12 @@
 #include "teacher.hpp"
 
-Teacher::Teacher(std::string log, std::string pwd) : login(log), password(pwd){
-    if(!(FileManage::findLogin(log, pwd))){
-        FileManage::saveLogin(log, pwd);
-    }
-};
+Teacher::Teacher(std::string log, std::string pwd) : login(log), password(pwd){};
 
 
 
-void Teacher::addGrade(Student* student, Course* course, double g_value, int g_weight, std::string g_desc){
-    Grade* newGrade = new Grade(student, course, g_value, g_weight, g_desc);
+void Teacher::addGrade(Grade* newGrade){
     this->grades.push_back(newGrade);
-    student->addGrade(newGrade);
+    newGrade->GetStudent()->addGrade(newGrade);
 };
 
 void Teacher::addCourse(Course* newCourse){
@@ -25,3 +20,7 @@ std::vector<Course*> Teacher::getCourses(){
 std::vector<Grade*> Teacher::getGrades(){
     return this->grades;
 };
+
+std::pair<std::string, std::string> Teacher::getData(){
+    return std::make_pair(this->login, this->password);
+}
