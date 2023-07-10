@@ -8,9 +8,9 @@ grade_value(g_value), grade_weight(g_weight), grade_description(desc){
 };
 
 
-std::string Grade::GetGrades(){
+std::string Grade::ShowGrade(){
     std::ostringstream oss;
-    oss << std::fixed << std::setprecision(2) << this->grade_value << " W:" << this->grade_weight << " | " << this->grade_description << '\n';
+    oss << std::fixed << std::setprecision(1) << this->grade_value << " W:" << this->grade_weight << " | " << this->grade_description << " ";
     return oss.str();
 }
 

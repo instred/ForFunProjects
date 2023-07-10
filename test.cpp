@@ -1,21 +1,22 @@
 #include <string>
 #include <iostream>
 #include <vector>
+#include <fstream>
 
 
 
-void foo(std::vector<std::string>& f){
-    std::string a = "du";
-    f[0] = a;
+void foo(){
+    std::ifstream file("test.txt");
+    std::string l,p,nums;
+    while (file >> l >> p >> nums){
+        for (int i = 0; i < nums.length(); i+=2){
+            std::cout << nums[i] - '0' << '\n';
+        }
+    }
 }
 
 int main(){
-    std::vector<std::string> dupy;
-    std::string dupa = "dupa";
-    dupy.push_back(dupa);
-    std::cout << dupy[0] << '\n';
-    foo(dupy);
-    std::cout << dupy[0] << '\n';
+    foo();
 
     return 0;
 }

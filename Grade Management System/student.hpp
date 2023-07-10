@@ -20,7 +20,8 @@ class Student{
         std::string last_name;
         Student(std::string f_name, std::string l_name);
         std::string ShowStudent();
-        std::string GetGrades(Course* c);
+        std::vector<Grade*> GetGrades();
+        std::vector<Grade*> FilterGrades(Course* course);
         void addGrade(Grade* grade);
         int getID();
 

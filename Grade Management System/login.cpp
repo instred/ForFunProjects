@@ -15,26 +15,6 @@ std::vector<Teacher> Login::loadTeachers(){
     return teachers;
 }
 
-std::vector<Course> Login::loadCourses(std::vector<Teacher>& teachers){
-    std::ifstream file("courses.txt");
-    std::string teacher_log, c;
-    std::vector<Course> courses;
-    while(file >> teacher_log >> c){
-        Course course(c);
-        courses.push_back(course);
-        for (auto t : teachers){
-            if(t.getData().first == teacher_log){
-                t.addCourse(&course);
-            }
-        }
-    }
-    if (file.fail() && !file.eof()) {
-        std::cerr << "Error: Failed to read data from teachers\n";
-        // Handle the error appropriately (e.g., return an empty vector or throw an exception)
-    }
-    return courses;
-}
-
 std::vector<Student> Login::loadStudents(){
     std::ifstream file("students.txt");
     std::string f_name, l_name;
@@ -51,7 +31,47 @@ std::vector<Student> Login::loadStudents(){
     return students;
 }
 
-std::vector<Grade> Login::loadGrades(std::vector<Teacher>& teachers, std::vector<Student>& students, std::vector<Course>& courses){
+std::vector<Course> Login::loadCourses(std::vector<Teacher>& teachers, std::vector<Student>& students, std::vector<std::pair<std::string, Course>>& teacherCourses){
+    std::ifstream file("courses.txt");
+    std::string teacher_log, c_name, txt_ids, tmp;
+    std::vector<Course> courses;
+    Student* courseStudent;
+    Course* teacherCourse;
+    while(file >> teacher_log >> c_name >> txt_ids){
+        Course course(c_name);
+        std::vector<int> student_ids;
+        std::stringstream numbers_in(txt_ids);
+        while(std::getline(numbers_in, tmp, ',')){
+            int n = stoi(tmp);
+            student_ids.push_back(n);
+        }
+        for (auto& id : student_ids){
+            courseStudent = &students[id-1];
+            course.addStudent(courseStudent);
+        }
+        teacherCourses.push_back(std::make_pair(teacher_log, course));
+        courses.push_back(course);
+    }
+    //check later if you can improve logic on it
+    for (auto& tmp : teacherCourses){
+        for (auto& t : teachers){
+            if(tmp.first == t.getLogin()){
+                t.addCourse(&tmp.second);
+            }
+        }
+    }
+    
+    if (file.fail() && !file.eof()) {
+        std::cerr << "Error: Failed to read data from courses.txt\n";
+        // Handle the error appropriately (e.g., return an empty vector or throw an exception)
+    }
+    
+
+    return courses;
+}
+
+
+std::vector<Grade> Login::loadGrades(std::vector<Teacher>& teachers, std::vector<Student>& students, std::vector<Course>& courses, std::vector<std::pair<std::string, Grade>>& teacherGrades){
     std::ifstream file("grades.txt");
     std::string course, description, teacher_log;
     double grade_value;
@@ -61,16 +81,20 @@ std::vector<Grade> Login::loadGrades(std::vector<Teacher>& teachers, std::vector
     std::vector<Grade> grades;
     while(file >> teacher_log >> student_id >> course >> grade_value >> weight >> description){
         gradeStudent = &students[student_id-1];
-        for (auto c : courses){
-            if(c.course_name == course){
+        for (auto& c : courses){
+            if(c.GetName() == course){
                 gradeCourse = &c;
             }     
         }
         Grade grade(gradeStudent, gradeCourse, grade_value, weight, description);
+        teacherGrades.push_back(std::make_pair(teacher_log, grade));
         grades.push_back(grade);
-        for (auto t : teachers){
-            if(t.getData().first == teacher_log){
-                t.addGrade(&grade);
+    }
+    //check later if you can improve logic on it
+    for (auto& tmp : teacherGrades){
+        for (auto& t : teachers){
+            if(tmp.first == t.getLogin()){
+                t.addGrade(&tmp.second);
             }
         }
     }
@@ -79,14 +103,24 @@ std::vector<Grade> Login::loadGrades(std::vector<Teacher>& teachers, std::vector
 
 void Login::initData(){
     FileManage::fillFile();
+    std::vector<std::pair<std::string, Course>> teacherCourses;
+    std::vector<std::pair<std::string, Grade>> teacherGrades;
     std::vector<Teacher> teachers = Login::loadTeachers();
     std::vector<Student> students = Login::loadStudents();
-    std::vector<Course> courses = Login::loadCourses(teachers);
-    std::vector<Grade> grades = Login::loadGrades(teachers, students, courses);
-    // on load add students to courses somehow
-    // prob courses.txt need a change idk
+    std::vector<Course> courses = Login::loadCourses(teachers, students, teacherCourses);
+    std::vector<Grade> grades = Login::loadGrades(teachers, students, courses, teacherGrades);
+    Course* dupa = teachers[0].getCourses()[1];
+    std::cout << teachers[0].getLogin() << ": ";
+    std::cout << dupa->GetName() << " ";
+    std::cout << dupa->GetStudents()[0]->ShowStudent() << "\n";
+    for (auto x : dupa->GetStudents()[0]->GetGrades()){
+        if (dupa->GetName() == x->GetCourse()->GetName()){
+            std::cout << x->ShowGrade() << "\n";
+        }
+        
+    }
 
-
+    
 
 }
 

@@ -24,3 +24,7 @@ std::vector<Grade*> Teacher::getGrades(){
 std::pair<std::string, std::string> Teacher::getData(){
     return std::make_pair(this->login, this->password);
 }
+
+std::string Teacher::getLogin(){
+    return this->login;
+}

@@ -17,7 +17,7 @@ class Grade{
     public:
         std::string grade_description;
         Grade(Student* student, Course* course, double g_value, int g_weight, std::string desc);
-        std::string GetGrades();
+        std::string ShowGrade();
         Course* GetCourse();
         Student* GetStudent();
 };
