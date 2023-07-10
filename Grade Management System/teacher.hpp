@@ -21,6 +21,7 @@ class Teacher{
         std::vector<Course*> getCourses();
         std::vector<Grade*> getGrades();
         std::pair<std::string, std::string> getData();
+        std::string getLogin();
 };
 
 

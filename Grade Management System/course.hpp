@@ -9,12 +9,14 @@
 class Course{
     protected:
         std::vector<Student*> students;
+        std::string course_name;
+        
 
     public:
-        std::string course_name;
         Course(const std::string &name);
-        void add_student(Student* student);
+        void addStudent(Student* student);
         std::vector<Student*> GetStudents();
+        std::string GetName();
 };
 
 #endif // COURSE_HPP

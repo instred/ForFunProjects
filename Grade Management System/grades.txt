@@ -1,7 +1,6 @@
 adm2 1 Mathematics 4.5 2 Homework
 adm2 1 Mathematics 3.0 3 Exam
 adm2 2 Mathematics 4.5 2 Homework
-adm2 3 Mathematics 3.5 2 Homework
 jan 1 Phisics 3.5 2 Homework
 jan 2 Phisics 4.0 3 Exam
 jan 3 Phisics 4.5 3 Exam
