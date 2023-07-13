@@ -28,3 +28,8 @@ std::pair<std::string, std::string> Teacher::getData(){
 std::string Teacher::getLogin(){
     return this->login;
 }
+
+std::ostream& operator<<(std::ostream& output, Teacher t){
+    output << t.login;
+    return output;
+}

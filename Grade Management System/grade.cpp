@@ -29,3 +29,8 @@ double Grade::GetValue(){
 int Grade::GetWeight(){
     return this->grade_weight;
 }
+
+std::ostream& operator<<(std::ostream& output, Grade g){
+    output << g.grade_value << " " << g.grade_weight << " " << g.grade_description << '\n';
+    return output;
+}

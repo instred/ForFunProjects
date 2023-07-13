@@ -22,6 +22,7 @@ class Teacher{
         std::vector<Grade*> getGrades();
         std::pair<std::string, std::string> getData();
         std::string getLogin();
+        friend std::ostream& operator<<(std::ostream& output, Teacher t);
 };
 
 

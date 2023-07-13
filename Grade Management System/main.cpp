@@ -9,4 +9,5 @@
 
 int main(){
     Login::userLoop();
+    return 0;
 }

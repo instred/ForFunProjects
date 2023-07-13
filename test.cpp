@@ -5,18 +5,21 @@
 
 
 
-void foo(){
-    std::ifstream file("test.txt");
-    std::string l,p,nums;
-    while (file >> l >> p >> nums){
-        for (int i = 0; i < nums.length(); i+=2){
-            std::cout << nums[i] - '0' << '\n';
-        }
+int silnia(int n){
+    if(n == 1)
+        return n;
+    return n * silnia(n-1);
+}
+
+int silnia2(int n){
+    int ans = 1;
+    for(int i=2;i<=n;i++){
+        ans *= i;
     }
+    return ans;
 }
 
 int main(){
-    foo();
-
+    std::cout << silnia(10) << " " << silnia2(10);
     return 0;
 }

@@ -17,6 +17,7 @@ class Course{
         void addStudent(Student* student);
         std::vector<Student*> GetStudents();
         std::string GetName();
+        friend std::ostream& operator<<(std::ostream& output, Course c);
 };
 
 #endif // COURSE_HPP

@@ -163,57 +163,80 @@ void Login::showGrades(Course* c_choice){
     }
 }
 
+void Login::reloadData(std::vector<std::pair<std::string, Course>>& teacherCourses,std::vector<std::pair<std::string, Grade>>& teacherGrades,
+std::vector<Teacher>& teachers, std::vector<Student>& students, std::vector<Course>& courses, std::vector<Grade>& grades){
+    teachers = Login::loadTeachers();
+    students = Login::loadStudents();
+    courses = Login::loadCourses(teachers, students, teacherCourses);
+    grades = Login::loadGrades(teachers, students, courses, teacherGrades);
+};
+
 
 void Login::userLoop(){
     std::cout << "Hi, Welcome to Grade Management System!\nPlease log in using your login and password:\n";
+    int mgmt_choice;
+    FileManage::fillFile();
+    std::vector<std::pair<std::string, Course>> teacherCourses;
+    std::vector<std::pair<std::string, Grade>> teacherGrades;
+    std::vector<Teacher> teachers = Login::loadTeachers();
+    std::vector<Student> students = Login::loadStudents();
+    std::vector<Course> courses = Login::loadCourses(teachers, students, teacherCourses);
+    std::vector<Grade> grades = Login::loadGrades(teachers, students, courses, teacherGrades);
+    std::string login = Login::loginAccess(teachers);
+    if (login == ""){
+        return;
+    }
+    Teacher* t_access;
+    for (auto& teacher : teachers){
+        if (teacher.getData().first == login){
+            t_access = &teacher;
+        }
+    }
+    std::cout << "Hi " << login << " Select your course:\n";
+    int course_n = 1;
+    for (auto& course : t_access->getCourses()){
+        std::cout << course_n << ": " << course->GetName() << '\n';
+        course_n ++; 
+    }
+    int c_id;
+    bool first = true;
+    std::cin >> c_id;
+    Course* c_choice = t_access->getCourses()[c_id-1];
+    std::cout << "Students on the list:\n";
     while(true){
-        FileManage::fillFile();
-        std::vector<std::pair<std::string, Course>> teacherCourses;
-        std::vector<std::pair<std::string, Grade>> teacherGrades;
-        std::vector<Teacher> teachers = Login::loadTeachers();
-        std::vector<Student> students = Login::loadStudents();
-        std::vector<Course> courses = Login::loadCourses(teachers, students, teacherCourses);
-        std::vector<Grade> grades = Login::loadGrades(teachers, students, courses, teacherGrades);
-        std::string login = Login::loginAccess(teachers);
-        if (login == ""){
-            return;
+        if (!first){
+            FileManage::fillFile();
+            // Login::reloadData(teacherCourses, teacherGrades, teachers, students, courses, grades);
         }
-        Teacher* t_access;
-        for (auto& teacher : teachers){
-            if (teacher.getData().first == login){
-                t_access = &teacher;
-            }
-        }
-        std::cout << "Hi " << login << " Select your course:\n";
-        int course_n = 1;
-        for (auto& course : t_access->getCourses()){
-            std::cout << course_n << ": " << course->GetName() << '\n';
-            course_n ++; 
-        }
-        int c_id;
-        std::cin >> c_id;
-        Course* c_choice = t_access->getCourses()[c_id-1];
-        std::cout << "Students on the list:\n";
         Login::showGrades(c_choice);
-        std::cout << "What would you like to do?\n1 - Add Grade\n2 - Remove Grade\n3 - Add Student to the Course\n4 - Remove Student from the list\n5 - Exit";
-        int mgmt_choice;
+        std::cout << "What would you like to do?\n1 - Add Grade\n2 - Remove Grade\n3 - Add Student to the Course\n4 - Remove Student from the list\n5 - Exit\n";
         std::cin >> mgmt_choice;
         switch (mgmt_choice)
         {
         case 1:
-            std::cout << "Adding grade format - studentID, grade value, grade weight, short description";
+        {
+            std::string g_desc;
+            int s_id, g_weight;
+            double g_val;
+            std::cout << "Adding grade format - studentID, grade value, grade weight, short description\n";
+            std::cin >> s_id >> g_val >> g_weight >> g_desc;
+            Grade newGrade(&students[s_id-1], c_choice, g_val, g_weight, g_desc);
+            std::ofstream os("grades.txt", std::ios_base::app);
+            os << *t_access << " " << s_id  << " " << *c_choice << " " << newGrade;
             break;
-        case 2:
+        }
             
+        case 2:
+            std::cout << "dupa";
             break;
         case 3:
-            
             break;
-        case 4:
-            
+        case 4: 
             break;
         case 5:
+            std::cout << "Closing program... ";
             return;
-        } 
+        }
+        first = false;
     }
 }

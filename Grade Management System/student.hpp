@@ -24,6 +24,7 @@ class Student{
         std::vector<Grade*> FilterGrades(Course* course);
         void addGrade(Grade* grade);
         int getID();
+        friend std::ostream& operator<<(std::ostream& output, Student s);
 
 };
 

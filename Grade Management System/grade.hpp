@@ -22,6 +22,7 @@ class Grade{
         Student* GetStudent();
         double GetValue();
         int GetWeight();
+        friend std::ostream& operator<<(std::ostream& output, Grade g);
 };
 
 

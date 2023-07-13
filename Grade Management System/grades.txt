@@ -5,3 +5,6 @@ jan 1 Phisics 3.5 2 Homework
 jan 2 Phisics 4.0 3 Exam
 jan 3 Phisics 4.5 3 Exam
 login 4 IT 5.0 3 Exam
+adm2 3 Mathematics 3.5 2 homework
+adm2 4 Mathematics 2.5 1 activity
+adm2 4 Mathematics 5 2 homework

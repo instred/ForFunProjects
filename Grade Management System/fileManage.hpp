@@ -11,7 +11,6 @@ class FileManage{
     public:
         static void fillFile();
         static std::string removeLine();
-        static void saveLogin(std::string login, std::string pwd);
 
 };
 

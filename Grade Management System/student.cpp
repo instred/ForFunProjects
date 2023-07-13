@@ -26,3 +26,8 @@ void Student::addGrade(Grade* grade){
 int Student::getID(){
     return this->id;
 }
+
+std::ostream& operator<<(std::ostream& output, Student s){
+    output << s.id;
+    return output;
+}

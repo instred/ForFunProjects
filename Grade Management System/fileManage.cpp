@@ -1,10 +1,5 @@
 #include "fileManage.hpp"
 
-void FileManage::saveLogin(std::string login, std::string pwd){
-    std::ofstream file("login.txt", std::ios::app);
-    file << login << " " << pwd << '\n';
-}
-
 void FileManage::fillFile(){
     std::fstream file;
     int i = 1;
