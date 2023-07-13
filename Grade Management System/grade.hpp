@@ -20,6 +20,8 @@ class Grade{
         std::string ShowGrade();
         Course* GetCourse();
         Student* GetStudent();
+        double GetValue();
+        int GetWeight();
 };
 
 

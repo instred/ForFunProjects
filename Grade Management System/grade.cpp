@@ -21,3 +21,11 @@ Course* Grade::GetCourse(){
 Student* Grade::GetStudent(){
     return this->student;
 }
+
+double Grade::GetValue(){
+    return this->grade_value;
+}
+
+int Grade::GetWeight(){
+    return this->grade_weight;
+}
