@@ -100,7 +100,7 @@ std::vector<Grade> Login::loadGrades(std::vector<Teacher>& teachers, std::vector
     }
 }
 
-
+// test
 void Login::initData(){
     FileManage::fillFile();
     std::vector<std::pair<std::string, Course>> teacherCourses;
