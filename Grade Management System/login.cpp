@@ -1,4 +1,7 @@
 #include "login.hpp"
+#include <thread>
+#include <chrono>
+
 
 std::vector<Teacher> Login::loadTeachers(){
     std::ifstream file("login.txt");
@@ -163,13 +166,14 @@ void Login::showGrades(Course* c_choice){
     }
 }
 
-void Login::reloadData(std::vector<std::pair<std::string, Course>>& teacherCourses,std::vector<std::pair<std::string, Grade>>& teacherGrades,
-std::vector<Teacher>& teachers, std::vector<Student>& students, std::vector<Course>& courses, std::vector<Grade>& grades){
-    teachers = Login::loadTeachers();
-    students = Login::loadStudents();
-    courses = Login::loadCourses(teachers, students, teacherCourses);
-    grades = Login::loadGrades(teachers, students, courses, teacherGrades);
-};
+// void Login::reloadData(std::vector<Teacher>& teachers, std::vector<Student>& students, std::vector<Course>& courses, std::vector<Grade>& grades){
+//     std::vector<std::pair<std::string, Course>> teacherCourses;
+//     std::vector<std::pair<std::string, Grade>> teacherGrades;
+//     teachers = Login::loadTeachers();
+//     students = Login::loadStudents();
+//     courses = Login::loadCourses(teachers, students, teacherCourses);
+//     grades = Login::loadGrades(teachers, students, courses, teacherGrades);
+// };
 
 
 void Login::userLoop(){
@@ -205,10 +209,34 @@ void Login::userLoop(){
     std::cout << "Students on the list:\n";
     while(true){
         if (!first){
+            std::cout << "Performing a Data Reload... \n";
             FileManage::fillFile();
-            // Login::reloadData(teacherCourses, teacherGrades, teachers, students, courses, grades);
+            
+            //why do these 2 loop make the program work?
+            for (auto& t : teachers[0].getCourses()[1]->GetStudents()[0]->GetGrades()){
+                std::cout << t->ShowGrade() << '\n';
+            }
+            std::cout << "------------\n";
+            std::vector<std::pair<std::string, Course>> teacherCourses;
+            std::vector<std::pair<std::string, Grade>> teacherGrades;
+            std::vector<Teacher> teachers = Login::loadTeachers();
+            std::vector<Student> students = Login::loadStudents();
+            std::vector<Course> courses = Login::loadCourses(teachers, students, teacherCourses);
+            std::vector<Grade> grades = Login::loadGrades(teachers, students, courses, teacherGrades);
+            for (auto& t : teachers[0].getCourses()[1]->GetStudents()[0]->GetGrades()){
+                std::cout << t->ShowGrade() << '\n';
+            }
+            //need to empty all objects then assign new pointers everywhere - make use of smart unique pointers lol
+            Teacher* t = &teachers[0];
+            Course* c_choice_new = t->getCourses()[c_id-1];
+            std::cout << &t << " | " << &t_access << '\n';
+            std::cout << c_choice << " | " << c_choice_new << '\n';
+            std::cout << "Data Reloaded\n";
         }
+        std::cout << "start\n" << c_choice->GetStudents()[0]->GetGrades()[0]->ShowGrade() << ", "
+         << c_choice->GetStudents()[1]->GetGrades()[1]->ShowGrade() << '\n';
         Login::showGrades(c_choice);
+        std::cout << "grades shown\n";
         std::cout << "What would you like to do?\n1 - Add Grade\n2 - Remove Grade\n3 - Add Student to the Course\n4 - Remove Student from the list\n5 - Exit\n";
         std::cin >> mgmt_choice;
         switch (mgmt_choice)
@@ -227,7 +255,7 @@ void Login::userLoop(){
         }
             
         case 2:
-            std::cout << "dupa";
+            std::cout << "dupa\n";
             break;
         case 3:
             break;
@@ -238,5 +266,6 @@ void Login::userLoop(){
             return;
         }
         first = false;
+        std::cout << "end";
     }
 }
