@@ -1,0 +1,2052 @@
+[
+  {
+    "meta": {
+      "id": "double",
+      "uuid": "d692d775-6032-4d72-b52e-b67fcbbb89aa",
+      "src": "coll_thes",
+      "section": "alpha",
+      "target": {
+        "tuuid": "8a2f5a9f-e937-4210-bdf8-b6f6de43af5c",
+        "tsrc": "collegiate"
+      },
+      "stems": [
+        "double",
+        "doubleness",
+        "doublenesses"
+      ],
+      "syns": [
+        [
+          "binary",
+          "bipartite",
+          "double-barreled",
+          "double-edged",
+          "dual",
+          "duplex",
+          "twin",
+          "twofold"
+        ],
+        [
+          "twofold"
+        ],
+        [
+          "artificial",
+          "backhanded",
+          "counterfeit",
+          "double-dealing",
+          "double-faced",
+          "fake",
+          "feigned",
+          "hypocritical",
+          "insincere",
+          "Janus-faced",
+          "jive",
+          "left-handed",
+          "lip",
+          "mealy",
+          "mealymouthed",
+          "Pecksniffian",
+          "phony",
+          "phony-baloney",
+          "pretended",
+          "two-faced",
+          "unctuous"
+        ]
+      ],
+      "ants": [
+        [
+          "single"
+        ],
+        [
+          "artless",
+          "candid",
+          "genuine",
+          "heartfelt",
+          "honest",
+          "sincere",
+          "undesigning",
+          "unfeigned"
+        ]
+      ],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "double"
+    },
+    "fl": "adjective",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "sn": "1",
+                "dt": [
+                  [
+                    "text",
+                    "consisting of two members or parts that are usually joined "
+                  ],
+                  [
+                    "vis",
+                    [
+                      {
+                        "t": "an egg with a {it}double{/it} yolk"
+                      }
+                    ]
+                  ]
+                ],
+                "syn_list": [
+                  [
+                    {
+                      "wd": "binary"
+                    },
+                    {
+                      "wd": "bipartite"
+                    },
+                    {
+                      "wd": "double-barreled"
+                    },
+                    {
+                      "wd": "double-edged"
+                    },
+                    {
+                      "wd": "dual"
+                    },
+                    {
+                      "wd": "duplex"
+                    },
+                    {
+                      "wd": "twin"
+                    },
+                    {
+                      "wd": "twofold"
+                    }
+                  ]
+                ],
+                "rel_list": [
+                  [
+                    {
+                      "wd": "mated"
+                    },
+                    {
+                      "wd": "paired"
+                    }
+                  ]
+                ],
+                "near_list": [
+                  [
+                    {
+                      "wd": "unpaired"
+                    }
+                  ]
+                ],
+                "ant_list": [
+                  [
+                    {
+                      "wd": "single"
+                    }
+                  ]
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              "sense",
+              {
+                "sn": "2",
+                "dt": [
+                  [
+                    "text",
+                    "being twice as great or as many "
+                  ],
+                  [
+                    "vis",
+                    [
+                      {
+                        "t": "after it was ranked the best in the country, the college had {it}double{/it} the usual number of applicants"
+                      }
+                    ]
+                  ]
+                ],
+                "syn_list": [
+                  [
+                    {
+                      "wd": "twofold"
+                    }
+                  ]
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              "sense",
+              {
+                "sn": "3",
+                "dt": [
+                  [
+                    "text",
+                    "not being or expressing what one appears to be or express "
+                  ],
+                  [
+                    "vis",
+                    [
+                      {
+                        "t": "she's known for speaking with a {it}double{/it} tongue, so I doubt that her concern is very heartfelt"
+                      }
+                    ]
+                  ]
+                ],
+                "syn_list": [
+                  [
+                    {
+                      "wd": "artificial"
+                    },
+                    {
+                      "wd": "backhanded"
+                    },
+                    {
+                      "wd": "counterfeit"
+                    },
+                    {
+                      "wd": "double-dealing"
+                    },
+                    {
+                      "wd": "double-faced"
+                    },
+                    {
+                      "wd": "fake"
+                    },
+                    {
+                      "wd": "feigned"
+                    },
+                    {
+                      "wd": "hypocritical"
+                    },
+                    {
+                      "wd": "insincere"
+                    },
+                    {
+                      "wd": "Janus-faced"
+                    },
+                    {
+                      "wd": "jive",
+                      "wsls": [
+                        "slang"
+                      ]
+                    },
+                    {
+                      "wd": "left-handed"
+                    },
+                    {
+                      "wd": "lip"
+                    },
+                    {
+                      "wd": "mealy"
+                    },
+                    {
+                      "wd": "mealymouthed"
+                    },
+                    {
+                      "wd": "Pecksniffian"
+                    },
+                    {
+                      "wd": "phony",
+                      "wvrs": [
+                        {
+                          "wvl": "also",
+                          "wva": "phoney"
+                        }
+                      ]
+                    },
+                    {
+                      "wd": "phony-baloney",
+                      "wvrs": [
+                        {
+                          "wvl": "or",
+                          "wva": "phoney-baloney"
+                        }
+                      ]
+                    },
+                    {
+                      "wd": "pretended"
+                    },
+                    {
+                      "wd": "two-faced"
+                    },
+                    {
+                      "wd": "unctuous"
+                    }
+                  ]
+                ],
+                "rel_list": [
+                  [
+                    {
+                      "wd": "affected"
+                    },
+                    {
+                      "wd": "assumed"
+                    },
+                    {
+                      "wd": "claptrap"
+                    },
+                    {
+                      "wd": "contrived"
+                    },
+                    {
+                      "wd": "forced"
+                    },
+                    {
+                      "wd": "mechanical"
+                    },
+                    {
+                      "wd": "put-on"
+                    },
+                    {
+                      "wd": "simulated"
+                    },
+                    {
+                      "wd": "strained"
+                    },
+                    {
+                      "wd": "unnatural"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "empty"
+                    },
+                    {
+                      "wd": "hollow"
+                    },
+                    {
+                      "wd": "meaningless"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "deceitful"
+                    },
+                    {
+                      "wd": "devious"
+                    },
+                    {
+                      "wd": "dishonest"
+                    },
+                    {
+                      "wd": "false"
+                    },
+                    {
+                      "wd": "untruthful"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "facile"
+                    },
+                    {
+                      "wd": "glib"
+                    },
+                    {
+                      "wd": "superficial"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "bogus"
+                    },
+                    {
+                      "wd": "sham"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "campy"
+                    },
+                    {
+                      "wd": "facetious"
+                    },
+                    {
+                      "wd": "jocular"
+                    },
+                    {
+                      "wd": "tongue-in-cheek"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "canting"
+                    },
+                    {
+                      "wd": "pharisaical"
+                    },
+                    {
+                      "wd": "pious"
+                    },
+                    {
+                      "wd": "sanctimonious"
+                    },
+                    {
+                      "wd": "self-righteous"
+                    },
+                    {
+                      "wd": "simon-pure"
+                    }
+                  ]
+                ],
+                "near_list": [
+                  [
+                    {
+                      "wd": "direct"
+                    },
+                    {
+                      "wd": "forthright"
+                    },
+                    {
+                      "wd": "frank"
+                    },
+                    {
+                      "wd": "heart-to-heart"
+                    },
+                    {
+                      "wd": "open"
+                    },
+                    {
+                      "wd": "plain"
+                    },
+                    {
+                      "wd": "straightforward"
+                    }
+                  ]
+                ],
+                "ant_list": [
+                  [
+                    {
+                      "wd": "artless"
+                    },
+                    {
+                      "wd": "candid"
+                    },
+                    {
+                      "wd": "genuine"
+                    },
+                    {
+                      "wd": "heartfelt"
+                    },
+                    {
+                      "wd": "honest"
+                    },
+                    {
+                      "wd": "sincere"
+                    },
+                    {
+                      "wd": "undesigning"
+                    },
+                    {
+                      "wd": "unfeigned"
+                    }
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "shortdef": [
+      "consisting of two members or parts that are usually joined",
+      "being twice as great or as many",
+      "not being or expressing what one appears to be or express"
+    ]
+  },
+  {
+    "meta": {
+      "id": "double",
+      "uuid": "c20f7abd-45eb-449b-b164-d3d6d940d033",
+      "src": "coll_thes",
+      "section": "alpha",
+      "target": {
+        "tuuid": "5d79eb3e-af1b-4046-9c9b-b1550842467e",
+        "tsrc": "collegiate"
+      },
+      "stems": [
+        "double",
+        "doubled",
+        "doubler",
+        "doublers",
+        "doubles",
+        "doubling"
+      ],
+      "syns": [
+        [
+          "duplicate",
+          "redouble"
+        ],
+        [
+          "fold"
+        ]
+      ],
+      "ants": [
+        [
+          "extend",
+          "open",
+          "spread",
+          "unfold",
+          "unroll"
+        ]
+      ],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "double"
+    },
+    "fl": "verb",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "sn": "1",
+                "dt": [
+                  [
+                    "text",
+                    "to make twice as great or as many "
+                  ],
+                  [
+                    "vis",
+                    [
+                      {
+                        "t": "we {it}doubled{/it} our investment in six months"
+                      }
+                    ]
+                  ]
+                ],
+                "syn_list": [
+                  [
+                    {
+                      "wd": "duplicate"
+                    },
+                    {
+                      "wd": "redouble"
+                    }
+                  ]
+                ],
+                "rel_list": [
+                  [
+                    {
+                      "wd": "compound"
+                    },
+                    {
+                      "wd": "multiply"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "accumulate"
+                    },
+                    {
+                      "wd": "balloon"
+                    },
+                    {
+                      "wd": "build (up)"
+                    },
+                    {
+                      "wd": "burgeon",
+                      "wvrs": [
+                        {
+                          "wvl": "also",
+                          "wva": "bourgeon"
+                        }
+                      ]
+                    },
+                    {
+                      "wd": "enlarge"
+                    },
+                    {
+                      "wd": "escalate"
+                    },
+                    {
+                      "wd": "expand"
+                    },
+                    {
+                      "wd": "increase"
+                    },
+                    {
+                      "wd": "mount"
+                    },
+                    {
+                      "wd": "mushroom"
+                    },
+                    {
+                      "wd": "proliferate"
+                    },
+                    {
+                      "wd": "rise"
+                    },
+                    {
+                      "wd": "snowball"
+                    },
+                    {
+                      "wd": "swell"
+                    },
+                    {
+                      "wd": "wax"
+                    }
+                  ]
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              "sense",
+              {
+                "sn": "2",
+                "dt": [
+                  [
+                    "text",
+                    "to lay one part over or against another part of "
+                  ],
+                  [
+                    "vis",
+                    [
+                      {
+                        "t": "{it}double{/it} the wet cloth and place it on the victim's forehead"
+                      }
+                    ]
+                  ]
+                ],
+                "syn_list": [
+                  [
+                    {
+                      "wd": "fold"
+                    }
+                  ]
+                ],
+                "rel_list": [
+                  [
+                    {
+                      "wd": "overlap"
+                    },
+                    {
+                      "wd": "overlay"
+                    },
+                    {
+                      "wd": "overlie"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "collapse"
+                    },
+                    {
+                      "wd": "telescope"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "close"
+                    },
+                    {
+                      "wd": "shut"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "plait"
+                    },
+                    {
+                      "wd": "pleat"
+                    }
+                  ]
+                ],
+                "ant_list": [
+                  [
+                    {
+                      "wd": "extend"
+                    },
+                    {
+                      "wd": "open"
+                    },
+                    {
+                      "wd": "spread"
+                    },
+                    {
+                      "wd": "unfold"
+                    },
+                    {
+                      "wd": "unroll"
+                    }
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "shortdef": [
+      "to make twice as great or as many",
+      "to lay one part over or against another part of"
+    ]
+  },
+  {
+    "meta": {
+      "id": "double",
+      "uuid": "9aa27508-99ad-46f6-93d1-fb8d253f9bfb",
+      "src": "coll_thes",
+      "section": "alpha",
+      "target": {
+        "tuuid": "7c030c23-b6c3-435a-aa5d-3507e989d2b4",
+        "tsrc": "collegiate"
+      },
+      "stems": [
+        "double",
+        "doubles"
+      ],
+      "syns": [
+        [
+          "alter ego",
+          "carbon",
+          "carbon copy",
+          "clone",
+          "counterpart",
+          "doppelg\u00e4nger",
+          "duplicate",
+          "duplication",
+          "facsimile",
+          "fetch",
+          "image",
+          "likeness",
+          "look-alike",
+          "match",
+          "mirror image",
+          "picture",
+          "replica",
+          "ringer",
+          "spit",
+          "spitting image",
+          "twin"
+        ]
+      ],
+      "ants": [],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "double"
+    },
+    "fl": "noun",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "dt": [
+                  [
+                    "text",
+                    "something or someone that strongly resembles another "
+                  ],
+                  [
+                    "vis",
+                    [
+                      {
+                        "t": "he looks so much like you that he could be your {it}double{/it}"
+                      }
+                    ]
+                  ]
+                ],
+                "syn_list": [
+                  [
+                    {
+                      "wd": "alter ego"
+                    },
+                    {
+                      "wd": "carbon"
+                    },
+                    {
+                      "wd": "carbon copy"
+                    },
+                    {
+                      "wd": "clone"
+                    },
+                    {
+                      "wd": "counterpart"
+                    },
+                    {
+                      "wd": "doppelg\u00e4nger",
+                      "wvrs": [
+                        {
+                          "wvl": "or",
+                          "wva": "doppelganger"
+                        }
+                      ]
+                    },
+                    {
+                      "wd": "duplicate"
+                    },
+                    {
+                      "wd": "duplication"
+                    },
+                    {
+                      "wd": "facsimile"
+                    },
+                    {
+                      "wd": "fetch"
+                    },
+                    {
+                      "wd": "image"
+                    },
+                    {
+                      "wd": "likeness"
+                    },
+                    {
+                      "wd": "look-alike"
+                    },
+                    {
+                      "wd": "match"
+                    },
+                    {
+                      "wd": "mirror image"
+                    },
+                    {
+                      "wd": "picture"
+                    },
+                    {
+                      "wd": "replica"
+                    },
+                    {
+                      "wd": "ringer"
+                    },
+                    {
+                      "wd": "spit"
+                    },
+                    {
+                      "wd": "spitting image"
+                    },
+                    {
+                      "wd": "twin"
+                    }
+                  ]
+                ],
+                "rel_list": [
+                  [
+                    {
+                      "wd": "effigy"
+                    },
+                    {
+                      "wd": "portrait"
+                    },
+                    {
+                      "wd": "portrayal"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "companion"
+                    },
+                    {
+                      "wd": "fellow"
+                    },
+                    {
+                      "wd": "mate"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "equal"
+                    },
+                    {
+                      "wd": "equivalent"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "analogue",
+                      "wvrs": [
+                        {
+                          "wvl": "or",
+                          "wva": "analog"
+                        }
+                      ]
+                    },
+                    {
+                      "wd": "parallel"
+                    }
+                  ]
+                ],
+                "near_list": [
+                  [
+                    {
+                      "wd": "antithesis"
+                    },
+                    {
+                      "wd": "converse"
+                    },
+                    {
+                      "wd": "opposite"
+                    },
+                    {
+                      "wd": "reverse"
+                    }
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "shortdef": [
+      "something or someone that strongly resembles another"
+    ]
+  },
+  {
+    "meta": {
+      "id": "double",
+      "uuid": "5a34c7b2-070e-4e93-a3fe-8d2b6d9d3b11",
+      "src": "coll_thes",
+      "section": "alpha",
+      "target": {
+        "tuuid": "00f0ab8c-1a2f-4807-ad35-a820d25367d3",
+        "tsrc": "collegiate"
+      },
+      "stems": [
+        "double"
+      ],
+      "syns": [
+        [
+          "doubly",
+          "twice",
+          "twofold"
+        ]
+      ],
+      "ants": [],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "double"
+    },
+    "fl": "adverb",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "dt": [
+                  [
+                    "text",
+                    "to two times the amount or degree "
+                  ],
+                  [
+                    "vis",
+                    [
+                      {
+                        "t": "raced to his side {it}double{/it} quick"
+                      }
+                    ]
+                  ]
+                ],
+                "syn_list": [
+                  [
+                    {
+                      "wd": "doubly"
+                    },
+                    {
+                      "wd": "twice"
+                    },
+                    {
+                      "wd": "twofold"
+                    }
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "shortdef": [
+      "to two times the amount or degree"
+    ]
+  },
+  {
+    "meta": {
+      "id": "double-barreled",
+      "uuid": "841c0fe1-b04d-48ff-921c-d5180f85a96d",
+      "src": "coll_thes",
+      "section": "alpha",
+      "target": {
+        "tuuid": "039c0cb9-d95e-4a92-aa77-671228f6e918",
+        "tsrc": "collegiate"
+      },
+      "stems": [
+        "double-barreled"
+      ],
+      "syns": [
+        [
+          "binary",
+          "bipartite",
+          "double",
+          "double-edged",
+          "dual",
+          "duplex",
+          "twin",
+          "twofold"
+        ]
+      ],
+      "ants": [
+        [
+          "single"
+        ]
+      ],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "double-barreled"
+    },
+    "fl": "adjective",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "dt": [
+                  [
+                    "text",
+                    "consisting of two members or parts that are usually joined "
+                  ],
+                  [
+                    "vis",
+                    [
+                      {
+                        "t": "the {it}double-barreled{/it} goal of the company is to do well in the marketplace and to do good in the community"
+                      }
+                    ]
+                  ]
+                ],
+                "syn_list": [
+                  [
+                    {
+                      "wd": "binary"
+                    },
+                    {
+                      "wd": "bipartite"
+                    },
+                    {
+                      "wd": "double"
+                    },
+                    {
+                      "wd": "double-edged"
+                    },
+                    {
+                      "wd": "dual"
+                    },
+                    {
+                      "wd": "duplex"
+                    },
+                    {
+                      "wd": "twin"
+                    },
+                    {
+                      "wd": "twofold"
+                    }
+                  ]
+                ],
+                "rel_list": [
+                  [
+                    {
+                      "wd": "mated"
+                    },
+                    {
+                      "wd": "paired"
+                    }
+                  ]
+                ],
+                "near_list": [
+                  [
+                    {
+                      "wd": "unpaired"
+                    }
+                  ]
+                ],
+                "ant_list": [
+                  [
+                    {
+                      "wd": "single"
+                    }
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "shortdef": [
+      "consisting of two members or parts that are usually joined"
+    ]
+  },
+  {
+    "meta": {
+      "id": "double bind",
+      "uuid": "248fe481-37fb-4227-9080-93c04e150307",
+      "src": "coll_thes",
+      "section": "alpha",
+      "target": {
+        "tuuid": "064f6eeb-cf6c-48a0-a1b0-36a05a541525",
+        "tsrc": "collegiate"
+      },
+      "stems": [
+        "double bind",
+        "double binds"
+      ],
+      "syns": [
+        [
+          "catch-22",
+          "dilemma",
+          "quandary"
+        ]
+      ],
+      "ants": [],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "double bind"
+    },
+    "fl": "noun",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "dt": [
+                  [
+                    "text",
+                    "a situation in which one has to choose between two or more equally unsatisfactory choices "
+                  ],
+                  [
+                    "vis",
+                    [
+                      {
+                        "t": "the {it}double bind{/it} faced by every politician: responding to scurrilous charges only gives them unwarranted publicity; not responding to such charges is often interpreted as an admission of guilt"
+                      }
+                    ]
+                  ]
+                ],
+                "syn_list": [
+                  [
+                    {
+                      "wd": "catch-22"
+                    },
+                    {
+                      "wd": "dilemma"
+                    },
+                    {
+                      "wd": "quandary"
+                    }
+                  ]
+                ],
+                "rel_list": [
+                  [
+                    {
+                      "wd": "deadlock"
+                    },
+                    {
+                      "wd": "impasse"
+                    },
+                    {
+                      "wd": "quagmire"
+                    },
+                    {
+                      "wd": "stalemate"
+                    },
+                    {
+                      "wd": "standoff"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "knot"
+                    },
+                    {
+                      "wd": "problem"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "bind"
+                    },
+                    {
+                      "wd": "difficulty"
+                    },
+                    {
+                      "wd": "fix"
+                    },
+                    {
+                      "wd": "hole"
+                    },
+                    {
+                      "wd": "jam"
+                    },
+                    {
+                      "wd": "pickle"
+                    },
+                    {
+                      "wd": "pinch"
+                    },
+                    {
+                      "wd": "plight"
+                    },
+                    {
+                      "wd": "predicament"
+                    },
+                    {
+                      "wd": "spot"
+                    }
+                  ]
+                ],
+                "near_list": [
+                  [
+                    {
+                      "wd": "breeze"
+                    },
+                    {
+                      "wd": "cinch"
+                    },
+                    {
+                      "wd": "duck soup"
+                    },
+                    {
+                      "wd": "snap"
+                    }
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "shortdef": [
+      "a situation in which one has to choose between two or more equally unsatisfactory choices"
+    ]
+  },
+  {
+    "meta": {
+      "id": "double-cross",
+      "uuid": "a19ec772-95e0-400b-a27e-1667c9f8a06a",
+      "src": "coll_thes",
+      "section": "alpha",
+      "target": {
+        "tuuid": "b7fee974-c72a-4a6e-b0e5-d3add211953b",
+        "tsrc": "collegiate"
+      },
+      "stems": [
+        "double-cross",
+        "double-crossed",
+        "double-crosser",
+        "double-crossers",
+        "double-crosses",
+        "double-crossing"
+      ],
+      "syns": [
+        [
+          "backstab",
+          "betray",
+          "cross",
+          "sell (out)",
+          "two-time"
+        ]
+      ],
+      "ants": [
+        [
+          "stand by"
+        ]
+      ],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "double-cross"
+    },
+    "fl": "verb",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "dt": [
+                  [
+                    "text",
+                    "to be unfaithful or disloyal to "
+                  ],
+                  [
+                    "vis",
+                    [
+                      {
+                        "t": "she promised to share the profits but then {it}double-crossed{/it} us"
+                      }
+                    ]
+                  ]
+                ],
+                "syn_list": [
+                  [
+                    {
+                      "wd": "backstab"
+                    },
+                    {
+                      "wd": "betray"
+                    },
+                    {
+                      "wd": "cross"
+                    },
+                    {
+                      "wd": "sell (out)"
+                    },
+                    {
+                      "wd": "two-time"
+                    }
+                  ]
+                ],
+                "rel_list": [
+                  [
+                    {
+                      "wd": "give away"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "inform (on)"
+                    },
+                    {
+                      "wd": "peach"
+                    },
+                    {
+                      "wd": "rat (on)"
+                    },
+                    {
+                      "wd": "shop",
+                      "wsls": [
+                        "British"
+                      ]
+                    },
+                    {
+                      "wd": "snitch (on)"
+                    },
+                    {
+                      "wd": "split (on)",
+                      "wsls": [
+                        "British"
+                      ]
+                    },
+                    {
+                      "wd": "tell (on)"
+                    },
+                    {
+                      "wd": "turn in"
+                    }
+                  ]
+                ],
+                "phrase_list": [
+                  [
+                    {
+                      "wd": "go back on"
+                    },
+                    {
+                      "wd": "sell down the river"
+                    },
+                    {
+                      "wd": "stab in the back"
+                    }
+                  ]
+                ],
+                "near_list": [
+                  [
+                    {
+                      "wd": "defend"
+                    },
+                    {
+                      "wd": "guard"
+                    },
+                    {
+                      "wd": "protect"
+                    },
+                    {
+                      "wd": "safeguard"
+                    },
+                    {
+                      "wd": "save"
+                    },
+                    {
+                      "wd": "shield"
+                    }
+                  ]
+                ],
+                "ant_list": [
+                  [
+                    {
+                      "wd": "stand by"
+                    }
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "shortdef": [
+      "to be unfaithful or disloyal to"
+    ]
+  },
+  {
+    "meta": {
+      "id": "double cross",
+      "uuid": "fed56844-65db-40f7-bccf-1ddd0c1ca416",
+      "src": "coll_thes",
+      "section": "alpha",
+      "target": {
+        "tuuid": "14626c64-5b44-4d6b-a257-1a1fdc70c1be",
+        "tsrc": "collegiate"
+      },
+      "stems": [
+        "double cross",
+        "double crosses"
+      ],
+      "syns": [
+        [
+          "backstabbing",
+          "betrayal",
+          "business",
+          "disloyalty",
+          "faithlessness",
+          "falseness",
+          "falsity",
+          "infidelity",
+          "perfidy",
+          "sellout",
+          "treachery",
+          "treason",
+          "two-timing",
+          "unfaithfulness"
+        ]
+      ],
+      "ants": [
+        [
+          "allegiance",
+          "devotion",
+          "faithfulness",
+          "fealty",
+          "fidelity",
+          "loyalty",
+          "staunchness",
+          "steadfastness"
+        ]
+      ],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "double cross"
+    },
+    "fl": "noun",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "dt": [
+                  [
+                    "text",
+                    "the act or fact of violating the trust or confidence of another "
+                  ],
+                  [
+                    "vis",
+                    [
+                      {
+                        "t": "politics is full of {it}double crosses{/it} and backbiting"
+                      }
+                    ]
+                  ]
+                ],
+                "syn_list": [
+                  [
+                    {
+                      "wd": "backstabbing"
+                    },
+                    {
+                      "wd": "betrayal"
+                    },
+                    {
+                      "wd": "business"
+                    },
+                    {
+                      "wd": "disloyalty"
+                    },
+                    {
+                      "wd": "faithlessness"
+                    },
+                    {
+                      "wd": "falseness"
+                    },
+                    {
+                      "wd": "falsity"
+                    },
+                    {
+                      "wd": "infidelity"
+                    },
+                    {
+                      "wd": "perfidy"
+                    },
+                    {
+                      "wd": "sellout"
+                    },
+                    {
+                      "wd": "treachery"
+                    },
+                    {
+                      "wd": "treason"
+                    },
+                    {
+                      "wd": "two-timing"
+                    },
+                    {
+                      "wd": "unfaithfulness"
+                    }
+                  ]
+                ],
+                "rel_list": [
+                  [
+                    {
+                      "wd": "abandonment"
+                    },
+                    {
+                      "wd": "desertion"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "deceit"
+                    },
+                    {
+                      "wd": "deception"
+                    },
+                    {
+                      "wd": "double-dealing"
+                    },
+                    {
+                      "wd": "duplicity"
+                    },
+                    {
+                      "wd": "guile"
+                    },
+                    {
+                      "wd": "two-facedness"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "fraud"
+                    },
+                    {
+                      "wd": "informing"
+                    },
+                    {
+                      "wd": "lying"
+                    },
+                    {
+                      "wd": "snitching"
+                    },
+                    {
+                      "wd": "talebearing"
+                    },
+                    {
+                      "wd": "trickery"
+                    }
+                  ]
+                ],
+                "near_list": [
+                  [
+                    {
+                      "wd": "dependability"
+                    },
+                    {
+                      "wd": "reliability"
+                    },
+                    {
+                      "wd": "trustworthiness"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "defense"
+                    },
+                    {
+                      "wd": "protection"
+                    },
+                    {
+                      "wd": "safeguard"
+                    },
+                    {
+                      "wd": "shield"
+                    }
+                  ]
+                ],
+                "ant_list": [
+                  [
+                    {
+                      "wd": "allegiance"
+                    },
+                    {
+                      "wd": "devotion"
+                    },
+                    {
+                      "wd": "faithfulness"
+                    },
+                    {
+                      "wd": "fealty"
+                    },
+                    {
+                      "wd": "fidelity"
+                    },
+                    {
+                      "wd": "loyalty"
+                    },
+                    {
+                      "wd": "staunchness"
+                    },
+                    {
+                      "wd": "steadfastness"
+                    }
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "shortdef": [
+      "the act or fact of violating the trust or confidence of another"
+    ]
+  },
+  {
+    "meta": {
+      "id": "double-crosser",
+      "uuid": "965b461f-8fb5-4f8c-9db9-6c4ff7c22c5e",
+      "src": "coll_thes",
+      "section": "alpha",
+      "stems": [
+        "double-crosser",
+        "double-crossers"
+      ],
+      "syns": [
+        [
+          "apostate",
+          "backstabber",
+          "betrayer",
+          "double-dealer",
+          "Judas",
+          "quisling",
+          "recreant",
+          "serpent",
+          "snake",
+          "traitor",
+          "turncoat"
+        ]
+      ],
+      "ants": [],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "double-crosser"
+    },
+    "fl": "noun",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "dt": [
+                  [
+                    "text",
+                    "one who betrays a trust or an allegiance "
+                  ],
+                  [
+                    "vis",
+                    [
+                      {
+                        "t": "we knew he was a {it}double-crosser{/it} so we didn't tell him our real plans"
+                      }
+                    ]
+                  ]
+                ],
+                "syn_list": [
+                  [
+                    {
+                      "wd": "apostate"
+                    },
+                    {
+                      "wd": "backstabber"
+                    },
+                    {
+                      "wd": "betrayer"
+                    },
+                    {
+                      "wd": "double-dealer"
+                    },
+                    {
+                      "wd": "Judas"
+                    },
+                    {
+                      "wd": "quisling"
+                    },
+                    {
+                      "wd": "recreant"
+                    },
+                    {
+                      "wd": "serpent"
+                    },
+                    {
+                      "wd": "snake"
+                    },
+                    {
+                      "wd": "traitor"
+                    },
+                    {
+                      "wd": "turncoat"
+                    }
+                  ]
+                ],
+                "rel_list": [
+                  [
+                    {
+                      "wd": "accommodationist"
+                    },
+                    {
+                      "wd": "collaborationist"
+                    },
+                    {
+                      "wd": "collaborator"
+                    },
+                    {
+                      "wd": "sellout"
+                    },
+                    {
+                      "wd": "subversive"
+                    },
+                    {
+                      "wd": "subverter"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "coconspirator"
+                    },
+                    {
+                      "wd": "conspirator"
+                    },
+                    {
+                      "wd": "intriguer"
+                    },
+                    {
+                      "wd": "plotter"
+                    },
+                    {
+                      "wd": "schemer"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "defector"
+                    },
+                    {
+                      "wd": "deserter"
+                    },
+                    {
+                      "wd": "renegade"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "blabbermouth"
+                    },
+                    {
+                      "wd": "gossip"
+                    },
+                    {
+                      "wd": "gossiper"
+                    },
+                    {
+                      "wd": "gossipmonger"
+                    },
+                    {
+                      "wd": "informant"
+                    },
+                    {
+                      "wd": "informer"
+                    },
+                    {
+                      "wd": "rat"
+                    },
+                    {
+                      "wd": "rumormonger"
+                    },
+                    {
+                      "wd": "snitch"
+                    },
+                    {
+                      "wd": "snitcher"
+                    },
+                    {
+                      "wd": "squealer"
+                    },
+                    {
+                      "wd": "stool pigeon"
+                    },
+                    {
+                      "wd": "talebearer"
+                    },
+                    {
+                      "wd": "talker"
+                    },
+                    {
+                      "wd": "tattler"
+                    },
+                    {
+                      "wd": "tattletale"
+                    },
+                    {
+                      "wd": "telltale"
+                    }
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "shortdef": [
+      "one who betrays a trust or an allegiance"
+    ]
+  },
+  {
+    "meta": {
+      "id": "double-dealer",
+      "uuid": "ad4b2c09-596d-49ad-9848-47a081741f3e",
+      "src": "coll_thes",
+      "section": "alpha",
+      "stems": [
+        "double-dealer",
+        "double-dealers"
+      ],
+      "syns": [
+        [
+          "apostate",
+          "backstabber",
+          "betrayer",
+          "double-crosser",
+          "Judas",
+          "quisling",
+          "recreant",
+          "serpent",
+          "snake",
+          "traitor",
+          "turncoat"
+        ]
+      ],
+      "ants": [],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "double-dealer"
+    },
+    "fl": "noun",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "dt": [
+                  [
+                    "text",
+                    "one who betrays a trust or an allegiance "
+                  ],
+                  [
+                    "vis",
+                    [
+                      {
+                        "t": "the company seems to have one or two {it}double-dealers{/it} who are selling information to competitors"
+                      }
+                    ]
+                  ]
+                ],
+                "syn_list": [
+                  [
+                    {
+                      "wd": "apostate"
+                    },
+                    {
+                      "wd": "backstabber"
+                    },
+                    {
+                      "wd": "betrayer"
+                    },
+                    {
+                      "wd": "double-crosser"
+                    },
+                    {
+                      "wd": "Judas"
+                    },
+                    {
+                      "wd": "quisling"
+                    },
+                    {
+                      "wd": "recreant"
+                    },
+                    {
+                      "wd": "serpent"
+                    },
+                    {
+                      "wd": "snake"
+                    },
+                    {
+                      "wd": "traitor"
+                    },
+                    {
+                      "wd": "turncoat"
+                    }
+                  ]
+                ],
+                "rel_list": [
+                  [
+                    {
+                      "wd": "accommodationist"
+                    },
+                    {
+                      "wd": "collaborationist"
+                    },
+                    {
+                      "wd": "collaborator"
+                    },
+                    {
+                      "wd": "sellout"
+                    },
+                    {
+                      "wd": "subversive"
+                    },
+                    {
+                      "wd": "subverter"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "coconspirator"
+                    },
+                    {
+                      "wd": "conspirator"
+                    },
+                    {
+                      "wd": "intriguer"
+                    },
+                    {
+                      "wd": "plotter"
+                    },
+                    {
+                      "wd": "schemer"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "defector"
+                    },
+                    {
+                      "wd": "deserter"
+                    },
+                    {
+                      "wd": "renegade"
+                    }
+                  ],
+                  [
+                    {
+                      "wd": "blabbermouth"
+                    },
+                    {
+                      "wd": "gossip"
+                    },
+                    {
+                      "wd": "gossiper"
+                    },
+                    {
+                      "wd": "gossipmonger"
+                    },
+                    {
+                      "wd": "informant"
+                    },
+                    {
+                      "wd": "informer"
+                    },
+                    {
+                      "wd": "rat"
+                    },
+                    {
+                      "wd": "rumormonger"
+                    },
+                    {
+                      "wd": "snitch"
+                    },
+                    {
+                      "wd": "snitcher"
+                    },
+                    {
+                      "wd": "squealer"
+                    },
+                    {
+                      "wd": "stool pigeon"
+                    },
+                    {
+                      "wd": "talebearer"
+                    },
+                    {
+                      "wd": "talker"
+                    },
+                    {
+                      "wd": "tattler"
+                    },
+                    {
+                      "wd": "tattletale"
+                    },
+                    {
+                      "wd": "telltale"
+                    }
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "shortdef": [
+      "one who betrays a trust or an allegiance"
+    ]
+  }
+]
