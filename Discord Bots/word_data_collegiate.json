@@ -1,22 +1,209 @@
 [
-  "dupe",
-  "dopa",
-  "duped",
-  "duma",
-  "duper",
-  "dup",
-  "dupes",
-  "dups",
-  "dep",
-  "dura",
-  "dip",
-  "pupa",
-  "diva",
-  "cuppa",
-  "dope",
-  "ducal",
-  "dopy",
-  "ducat",
-  "dpi",
-  "dukka"
+  {
+    "meta": {
+      "id": "gaslight:1",
+      "uuid": "95cfd457-08a8-49b5-9ddd-bec635ee94b9",
+      "sort": "070440000",
+      "src": "collegiate",
+      "section": "alpha",
+      "stems": [
+        "gaslight",
+        "gaslights"
+      ],
+      "offensive": false
+    },
+    "hom": 1,
+    "hwi": {
+      "hw": "gas*light",
+      "prs": [
+        {
+          "mw": "\u02c8gas-\u02ccl\u012bt",
+          "sound": {
+            "audio": "gaslig01",
+            "ref": "c",
+            "stat": "1"
+          }
+        },
+        {
+          "mw": "-\u02c8l\u012bt"
+        }
+      ]
+    },
+    "fl": "noun",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "sn": "1",
+                "dt": [
+                  [
+                    "text",
+                    "{bc}light made by burning illuminating gas"
+                  ]
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              "sense",
+              {
+                "sn": "2 a",
+                "dt": [
+                  [
+                    "text",
+                    "{bc}a gas flame"
+                  ]
+                ]
+              }
+            ],
+            [
+              "sense",
+              {
+                "sn": "b",
+                "dt": [
+                  [
+                    "text",
+                    "{bc}a gas lighting fixture"
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "date": "1808{ds||1||}",
+    "shortdef": [
+      "light made by burning illuminating gas",
+      "a gas flame",
+      "a gas lighting fixture"
+    ]
+  },
+  {
+    "meta": {
+      "id": "gaslight:2",
+      "uuid": "f51f3b84-8f77-44d5-8786-570c0704a3c4",
+      "sort": "070440500",
+      "src": "collegiate",
+      "section": "alpha",
+      "stems": [
+        "gaslight",
+        "gaslighted",
+        "gaslighting",
+        "gaslights",
+        "gaslit"
+      ],
+      "offensive": false
+    },
+    "hom": 2,
+    "hwi": {
+      "hw": "gaslight"
+    },
+    "fl": "verb",
+    "ins": [
+      {
+        "if": "gas*light*ed"
+      },
+      {
+        "il": "or",
+        "if": "gas*lit"
+      },
+      {
+        "if": "gas*light*ing"
+      },
+      {
+        "if": "gas*lights"
+      }
+    ],
+    "def": [
+      {
+        "vd": "transitive verb",
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "sn": "1",
+                "dt": [
+                  [
+                    "text",
+                    "{bc}to psychologically manipulate (a person) usually over an extended period of time so that the victim questions the validity of their own thoughts, perception of reality, or memories and experiences confusion, loss of confidence and self-esteem, and doubts concerning their own emotional or mental stability {bc}to subject (someone) to {d_link|gaslighting|gaslighting:1} "
+                  ],
+                  [
+                    "vis",
+                    [
+                      {
+                        "t": "You might think someone who is {wi}gaslighting{/wi} you would only lie about big things that they could cover up or hide. But that's not the case. They often lie about all things big and small just to throw you off.",
+                        "aq": {
+                          "auth": "Amy Morin"
+                        }
+                      },
+                      {
+                        "t": "But sexual abuse claims against the powerful stall more easily. There were experts willing to attack my credibility. There were doctors willing to {wi}gaslight{/wi} an abused child.",
+                        "aq": {
+                          "auth": "Dylan Farrow"
+                        }
+                      },
+                      {
+                        "t": "Taylor-Dior Rumble is a writer and actor, and she has direct experience with being racially {wi}gaslit{/wi}. \u2026 'While we often look at gaslighting as something that's done between two people in an intimate relationship, it's no different to how this country responds to Black and brown people, whenever we're tasked with {ldquo}proving{rdquo} that racism still exists in Britain.'",
+                        "aq": {
+                          "auth": "Natalie Morris"
+                        }
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              "sense",
+              {
+                "sn": "2",
+                "dt": [
+                  [
+                    "text",
+                    "{bc}to grossly mislead or deceive (someone) especially for one's own advantage "
+                  ],
+                  [
+                    "vis",
+                    [
+                      {
+                        "t": "Conservative groups are slamming President Biden and his administration for attempting to {ldquo}{wi}gaslight{/wi}{rdquo} Americans into believing that the country isn't in a recession.",
+                        "aq": {
+                          "auth": "Jack Durschlag"
+                        }
+                      },
+                      {
+                        "t": "Former White House press secretary and communications director Sean Spicer has been accused of {ldquo}{wi}gaslighting{/wi} Americans{rdquo} and including multiple inaccuracies in his new memoir \u2026",
+                        "aq": {
+                          "auth": "Diana Stancy Correll"
+                        }
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "et": [
+      [
+        "text",
+        "after {it}Gas Light{/it}, a play (1938) by British writer Patrick Hamilton, subsequently made into British and American films entitled {it}Gaslight{/it} (1940 and 1944), in which a man attempts to trick his wife into believing that she is going insane"
+      ]
+    ],
+    "date": "1953{ds||1||}",
+    "shortdef": [
+      "to psychologically manipulate (a person) usually over an extended period of time so that the victim questions the validity of their own thoughts, perception of reality, or memories and experiences confusion, loss of confidence and self-esteem, and doubts concerning their own emotional or mental stability : to subject (someone) to gaslighting",
+      "to grossly mislead or deceive (someone) especially for one's own advantage"
+    ]
+  }
 ]
