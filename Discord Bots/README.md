@@ -5,7 +5,7 @@
  * It operates using Discord API key, to read user messages. Then I check if the message is a proper command, so I can parse the user text to a dictionary API class, which gets me the word meaning, so I can make an answer on discord.
 
 > [!IMPORTANT]
-> The Discord key is changed to ensure it's all secure.
+> The Discord API and Dictionary API keys ar changed to ensure it's all secure.
 
 
 Here's a little preview how it's working:
