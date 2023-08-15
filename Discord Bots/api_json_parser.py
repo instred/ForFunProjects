@@ -5,7 +5,7 @@ import discord
 class Parser:
     def __init__(self, my_word) -> None:
         self.my_word = my_word
-        self.jdef_collegiate = self.grab_json_definition("collegiate", "dc749a55-c7ca-4c27-8de8-7eff26afe324")
+        self.jdef_collegiate = self.grab_json_definition("collegiate", "Dictionary-API-key")
         self.json_formatted_col = json.loads(self.jdef_collegiate)
         
 
