@@ -33,6 +33,7 @@ redColor = pygame.Color(255, 0, 0)
 
 
 def gameOver() -> None:
+    pygame.mixer.Sound.play(hit_sound)
     pygame.mixer.Sound.play(die_sound)
     gameover : bool = True
     while gameover:
@@ -73,7 +74,7 @@ def mainLoop(player) -> None:
         clock.tick(game_fps)
         window.fill((0,0,0))
         window.blit(game_bg,(bgX,0))
-        window.blit(game_bg,(width+bgX,0))
+        window.blit(game_bg,(width+bgX+0.1,0))
         window.blit(player.show(math.floor(player_frame)), (player.cordX, player.cordY))
         showScore(player.showScore())
         if gameStart:
@@ -82,7 +83,6 @@ def mainLoop(player) -> None:
                 window.blit(p.show(False), (p.cordX, p.cordY))
                 window.blit(p.show(True), (p.cordX, p.cordY + p.height+200))
                 if (p.checkCollision(False,player)) or (p.checkCollision(True,player)):
-                    pygame.mixer.Sound.play(hit_sound)
                     player.isDead = True
                 if p.cordX < 200 and p.cordX > 196:
                     player.score += 1
@@ -94,11 +94,11 @@ def mainLoop(player) -> None:
         
         # simple background looping + player frames looping
         # player flickers when new background appears need fix
-        if (bgX<-width):
+        if (bgX < -width):
             window.blit(game_bg,(width+bgX,0))
             bgX=0
-        if width+bgX < 255:
-            window.blit(player.show(math.floor(player_frame)), (player.cordX, player.cordY))
+        # if width+bgX < 255:
+        #     window.blit(player.show(math.floor(player_frame)), (player.cordX, player.cordY))
         
         bgX-=2
         if (player_frame >= 4.89):
@@ -131,4 +131,5 @@ def mainLoop(player) -> None:
         pygame.display.update()
 
 
-mainLoop(player)
+if __name__ == "__main__":
+    mainLoop(player)

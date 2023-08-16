@@ -43,17 +43,7 @@ class Player:
             self.isDead = True
             self.cordY = 580
 
-    # def closestPipe(self, pipes) -> float:
-    #     dist = 2000
-    #     for p in pipes:
-    #         if p.cordX < dist:
-    #             dist = p.cordX
-    #     if dist < 200:
-    #         dist = 2000
-    #         print("dupa")
-    #         self.score += 1
-            
-    #     return dist
+
 
 
 
