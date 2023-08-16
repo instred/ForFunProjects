@@ -1,4 +1,6 @@
-WORK IN PROGRESS
+### WORK IN PROGRESS
+
+This is me exploring C++ teritory more to learn how the language works.
 
 This is an app to give students grades from different subjects.
 You can add a grade, delete it, check students grades/AVG.
