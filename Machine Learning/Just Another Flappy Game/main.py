@@ -27,7 +27,6 @@ pygame.display.set_caption("Just Another Flappy Game")
 
 game_bg = pygame.image.load(os.path.join("images", "background.jpg"))
 game_bg = pygame.transform.scale(game_bg,(width,height))
-font = pygame.font.SysFont("monospace", 15)
 redColor = pygame.Color(255, 0, 0)
 
 
