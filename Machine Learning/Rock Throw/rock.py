@@ -1,5 +1,6 @@
-import pygame
+
 import math
+from pygame import draw, display
 from player import PLAYER_X, PLAYER_HEIGHT
 from data import LINE_Y, BLACK
 from goal import GOAL_HEIGHT, GOAL_WIDTH
@@ -11,7 +12,7 @@ GRAVITY = 0.5
 
 class Rock:
 
-    def __init__(self, game_window : pygame.display) -> None:
+    def __init__(self, game_window : display) -> None:
         self.cordX = ROCK_X
         self.cordY = ROCK_Y
         self.radius = ROCK_RADIUS
@@ -23,14 +24,14 @@ class Rock:
         self.onGround = False
 
     def show(self) -> None:
-        rock_img = pygame.draw.circle(self.window, BLACK, (self.cordX, self.cordY), self.radius)
+        rock_img = draw.circle(self.window, BLACK, (self.cordX, self.cordY), self.radius)
 
     
     def throw(self, power, angle) -> None:
         self.velocity[0] = -power * math.cos(math.radians(angle))
         self.velocity[1] = -power * math.sin(math.radians(angle))
 
-    def update(self, goal) -> None:
+    def update(self, wall) -> None:
         self.velocity[1] += GRAVITY
         self.cordX += self.velocity[0]
         self.cordY += self.velocity[1]
@@ -47,6 +48,21 @@ class Rock:
             if not self.onGround:
                 self.bounces += 1
 
+        if wall.collideRight(self):
+            self.velocity[1] = -self.velocity[1] * self.bounce_factor
+            self.velocity[0] *= 0.7
+
+            if self.cordX - self.radius < wall.cordX:
+                self.cordX = wall.cordX - self.radius
+                if self.velocity[0] > 0:  # Rock is moving to the right
+                    self.velocity[0] *= -1  # Reverse horizontal velocity
+                    
+            else:
+                self.cordX = wall.cordX + GOAL_WIDTH + self.radius
+                if self.velocity[0] < 0:  # Rock is moving to the left
+                    self.velocity[0] *= -1
+            self.velocity[1] *= -1
+
     def reset(self):
         self.cordX = ROCK_X
         self.cordY = ROCK_Y
@@ -55,8 +71,10 @@ class Rock:
         self.onGround = False
         self.bounces = 0
 
-    def collide(self, goal):
-        if (self.cordX > goal.cordX+20 and self.cordX - 5 < goal.cordX + GOAL_WIDTH and
+    def collideGoal(self, goal):
+        if (self.cordX > goal.cordX+20 and self.cordX < goal.cordX + GOAL_WIDTH and
                 self.cordY - self.radius > goal.cordY and self.cordY < goal.cordY + GOAL_HEIGHT):
             return True
         return False
+    
+    

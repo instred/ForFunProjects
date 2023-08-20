@@ -14,6 +14,7 @@ class Player:
         self.cordY = LINE_Y - PLAYER_HEIGHT
         self.score = 0
         self.window = game_window
+        self.throwCount = 0
 
     def show(self) -> None:
         player_img = pygame.image.load("player.png")
@@ -22,7 +23,12 @@ class Player:
 
     def reset(self) -> None:
         self.score = 0
+        self.throwCount = 0
 
     def setDistance(self, dist : int) -> None:
         self.score = dist
+
+    def throwRock(self, rock, power, angle) -> None:
+        rock.throw(power, angle)
+        self.throwCount += 1
 
