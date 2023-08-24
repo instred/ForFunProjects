@@ -20,7 +20,8 @@ def getCat(directory=None, filename=None, format='jpg'):
 def randomHash() -> str:
     random_hash = ['#lovecats', '#instacat', '#catphoto', '#catloversclub', '#kittylove', '#catagram', 
                    '#catlife', '#catslover', '#catlover', '#lazy', '#working', '#meow', '#meowing', '#sexymeow',
-                   '#meow', '#meowdel', '#happycat', '#kittenlove ', '#cat_of_the_day', '#kitty', '#catscatscats', '#meows♥']
+                   '#meow', '#meowdel', '#happycat', '#kittenlove ', '#cat_of_the_day', '#kitty', '#catscatscats', '#meows♥',
+                   '#cute', '#cutie', '#cutiepie']
     return choice(random_hash)
 
 def twitterAPI() -> tweepy.api:
