@@ -1,7 +1,7 @@
 import ast
 import requests
 from random import choice
-from data import CONSUMER_KEY, CONSUMER_SECRET, ACCESS_KEY, ACCESS_SECRET, BEARER_TOKEN, DISCORD_TOKEN, WEBHOOK
+from data import CONSUMER_KEY, CONSUMER_SECRET, ACCESS_KEY, ACCESS_SECRET, BEARER_TOKEN, WEBHOOK
 import requests
 from discord import Webhook, SyncWebhook
 import tweepy
