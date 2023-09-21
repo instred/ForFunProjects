@@ -4,8 +4,49 @@ from .models import MyList, Item
 from .forms import CreateList
 
 
+def papa(response):
+    txt = ""
+
+    if response.method == "POST":
+        print(response.POST)
+        
+        if response.POST.get("zapisz"):
+            print('huj')
+            txt = "Udalo ci sie odpapiezowac"
+            for i in range(5):
+                if i == 2 or i == 0:
+                    if response.POST.get("check" + str(i)) == "clicked":
+                        txt = "Przegrales, zostales podwojnie spapiezowany"
+            
+        if response.POST.get("retry"):
+            return HttpResponseRedirect('/papa')
+
+    return render(response, "main/papa.html", {"txt" : txt})
+
+
 def index(response, id):
     ls = MyList.objects.get(id=id)
+
+    if response.method == "POST":
+        print(response.POST)
+        
+        if response.POST.get("save"):
+            for item in ls.item_set.all():
+                if response.POST.get("c" + str(item.id)) == "clicked":
+                    item.complete = True
+                else:
+                    item.complete = False
+                
+                item.save()
+
+        elif response.POST.get("newItem"):
+            txt = response.POST.get("new")
+
+            if len(txt) > 2:
+                ls.item_set.create(text=txt, complete=False)
+            else:
+                print("invalid")
+
     return render(response, "main/list.html", {"ls": ls})
 
 def home(response):

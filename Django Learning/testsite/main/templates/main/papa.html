@@ -1,0 +1,40 @@
+{% extends 'main/base.html' %}
+
+
+{% block title %}
+    2137 2137 2137 2137 2137 2137
+{% endblock %}
+
+{% block content %}
+
+    <h1> Zostales spapiezowany </h1>
+
+
+    {% load static %}
+    <img src="{% static 'jp2gmd.gif' %}" />
+    <h3> Czy chcesz sie odpapiezowac?</h3>
+    <form method="post", action="#">
+        {% csrf_token %}
+        <ul>
+            {% for x in '012'|make_list %}
+                <li>
+                    <input type="checkbox", value="clicked", name="check{{x}}">
+                    Tak
+                </li>
+
+            {% endfor %}
+
+        </ul>
+        <button type="submit", name="zapisz", value="zapisz">Zapisz decyzje</button>
+        
+        <h3> {{txt}} </h3>
+
+        <button type="submit", name="retry", value="retry">Sprobuj ponownie</button>
+    </form>
+
+    
+
+    
+
+
+{% endblock %}
