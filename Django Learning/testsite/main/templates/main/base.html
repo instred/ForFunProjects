@@ -7,9 +7,12 @@
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'homepage.css' %}">
 
     <title>
         {% block title %}
@@ -22,50 +25,52 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="collapse navbar-collapse">
-            <img class="logo" src="{% static 'kubi.png' %}" alt="Logo">
-            <ul class="navbar-nav mr-auto">
+        <a style="width:190px; height:55px" href="/"> <img style="width:190px; height:55px" src="{% static 'kubi.png' %}" alt="Logo"> </a>
+        <div class="collapse navbar-collapse" style="margin-left:20px">
+            
+            <ul class="navbar-nav">
                 <li class="nav-item active">
                 <a class="nav-link" href="/"> Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <li class="nav-item active">
+                <a class="nav-link" href="/projects">My projects </a>
                 </li>
-
+                <li class="nav-item active">
+                    <a class="nav-link" href="/about"> About Me </a>
+                </li>
             </ul>
-            {% if user.is_authenticated %}
-                <span class="navbar-text">
-                    <a class="nav-link" href="/logout">Logout</a>
-                </span>
-            {% else %}
-                <span class="navbar-text">
-                    <a class="nav-link" href="/login">Login</a>
-                </span>
-                <span class="navbar-text">
-                    <a class="nav-link" href="/register">Register</a>
-                </span>
-            {% endif %}
+        </div>
+    
+        {% if user.is_authenticated %}
+            <span class="navbar-text">
+                <a class="nav-link" href="/logout">Logout</a>
             </span>
-        </div>
-      </nav>
-
-
-    <div id="content", name="content", class="main">
-        <div class="row justify-content-center">
-            <div class="col-8">
-                <h1 class="mt-2"> My Site</h1>
-                <hr class="mt-0 mb-4">
-
-                {% block content %}
-
-                {% endblock %}
-
-            </div>
-
-        </div>
+        {% else %}
+            <span class="navbar-text">
+                <a class="nav-link" href="/login">Login</a>
+            </span>
+            <span class="navbar-text">
+                <a class="nav-link" href="/register">Register</a>
+            </span>
+        {% endif %}
+    
         
+    </nav>
 
-    </div>
+    {% block home %}
+	{% endblock %}
+
+    {% block main %}
+    <div id="content" name="content" class="main">
+		<div class="row justify-content-center">
+			<div class="col-8">
+				{% block content %}
+				{% endblock %}
+			</div>
+		</div>
+	</div>
+    {% endblock  %}
+    
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -74,7 +79,7 @@
 
 </body>
 
-<div class="footer-container" style="background-color: #db6930">
+<div class="footer-container" style="background-color: #db6930;">
 
     <footer class="text-center text-lg-start" style="background-color: #db6930;">
       <div class="container d-flex justify-content-center py-5">
